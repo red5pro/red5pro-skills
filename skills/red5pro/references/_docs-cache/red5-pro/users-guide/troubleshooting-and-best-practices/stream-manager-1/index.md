@@ -1,0 +1,21 @@
+---
+title: Stream Manager 1
+menu_order: 5
+---
+- [Autoscale Best Practices and Troubleshooting](sm-1-best-practices-overview/)
+- [Recommended Instance Types](sm-1-instance-types/)
+- [NODE CONTROLLER CONFIGURATION SECTION](sm-1-node-controller-configuration/)
+- [Autoscale Nodes](sm-1-node-security/)
+- [Character limits and Naming Recommendations](sm-1-policies/)
+- [Stream Manager Security](sm-1-secure/)
+- [Securing Autoscaling](sm-1-security-overview/)
+- [Security Recommendations](sm-1-security/)
+- [Stream Manager Sunset API](sm-1-sunset-api/)
+- [Troubleshooting AWS Autoscale Deployment](sm-1-toubleshooting-aws-installation/)
+- [NODE CONTROLLER CONFIGURATION SECTION](sm-1-traffic-management-node-controller-configuration/)
+- [Stream Manager Roles Optimization](sm-1-traffic-management/)
+- [Troubleshooting Digital Ocean Autoscale Deployment](sm-1-troubleshooting-do-installation/)
+- [Troubleshooting GCP Autoscale Deployment](sm-1-troubleshooting-gcp-installation/)
+- [Troubleshooting Autoscale Deployment - General](sm-1-troubleshooting-installation/)
+- [Troubleshooting Red5 Pro Autoscaling Issues](sm-1-troubleshooting-issues/)
+- [Troubleshooting Simulated Cloud Autoscale Deployment](sm-1-troubleshooting-simulated-cloud-installation/)

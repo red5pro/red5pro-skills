@@ -1,0 +1,16 @@
+---
+title: Zixi
+description:
+menu_order: 11
+---
+
+Zixi is a leading platform for secure, reliable, and low-latency video transport over IP networks. It ensures high-quality live video delivery by correcting packet loss and minimizing jitter, making it ideal for professional broadcast applications.
+When used with Red5 Cloud, Zixi streams can be received directly via Zixi Broadcaster or Zixi Receiver. Once the stream enters Red5 Cloud, it can be transcoded, recorded, and delivered globally using protocols like WebRTC, HLS, and RTMP. This workflow enables high-quality contribution feeds from remote locations to be distributed at scale in real time.
+
+### Here are some helpful links to get started with using Zixi on Red5 Cloud:
+
+Quick Start Guide: Step by Step from Zero to Streaming Zixi with Red5 Cloud[Zixi with Red5 Cloud](/docs/red5-cloud/getting-started/quick-start-guide/red5-cloud-zixi-step-by-step-from-zero-to-streaming-with-red5-cloud/)
+
+Zixi Re-Streamer Overview: Learn how the Zixi Re-Streamer works within Red5 Cloud to receive, process, and redistribute Zixi streams using multiple output protocols.
+[Zixi Restreamer](/docs/red5-pro/users-guide/restreamer/red5-pro-restreamer-zixi/)
+[Zixi Output](/docs/red5-pro/users-guide/restreamer/red5-pro-restreamer-zixi-Output/)

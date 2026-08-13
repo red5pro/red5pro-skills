@@ -1,0 +1,12 @@
+# Terms scripts/validate-skills.sh flags if found under skills/red5pro/
+# (excluding references/_docs-cache/, which mirrors third-party content we
+# don't author and don't police the wording of).
+#
+# One term per line, case-insensitive substring match. Blank lines and lines
+# starting with # are ignored. Add internal codenames, ticket prefixes,
+# employee names, or other terms that shouldn't leak into a published skill.
+
+TODO
+FIXME
+red5pro-docs
+your-docusaurus-site.example.com

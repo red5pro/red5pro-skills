@@ -1,0 +1,57 @@
+# Paths (files or directories) to mirror from red5pro-docs' website/docs/
+# into skills/red5pro/references/_docs-cache/, preserving relative structure.
+#
+# One entry per line, relative to <red5pro-docs>/website/docs/. Blank lines
+# and lines starting with # are ignored. Keep this in sync with the
+# https://www.red5.net/docs/... links in skills/red5pro/references/**/*.md —
+# each entry here should correspond to a link a reference file actually
+# points at, not the whole docs tree.
+
+# server
+red5-pro/users-guide/installation
+red5-pro/users-guide/clustering
+red5-pro-basics/streaming-glossary.md
+
+# protocols
+red5-pro/users-guide/protocols
+red5-pro/users-guide/red5-pro-whip-and-whep-configuration.md
+
+# authentication
+red5-pro/users-guide/authentication
+
+# streaming-features
+red5-pro/users-guide/restreamer
+red5-pro/users-guide/transcoder
+red5-pro/users-guide/mixer
+red5-pro/users-guide/recording-and-vod
+red5-pro/users-guide/social-pusher
+red5-pro/users-guide/red5-pro-stream-aliasing-overview.md
+red5-pro/users-guide/red5-pro-single-port-muxing.md
+red5-pro/users-guide/red5-pro-webhooks-overview.md
+red5-pro/users-guide/red5-pro-thumbnails.md
+red5-pro/users-guide/red5-pro-castlabs-drm.md
+red5-pro/users-guide/red5-pro-castlabs-watermarking.md
+
+# stream-manager
+red5-pro/users-guide/stream-manager-2.0
+
+# troubleshooting
+red5-pro/users-guide/troubleshooting-and-best-practices
+
+# cloud
+red5-cloud/users-guide
+red5-cloud/introduction
+red5-cloud/troubleshooting
+
+# server-side / management REST APIs (covers authentication + stream-manager-2.0 API subtrees too)
+red5-pro/development/api
+
+# sdks
+red5-pro/development/sdks/index.md
+red5-pro/development/sdks/red5-core-sdk
+red5-pro/development/sdks/red5-webrtc-sdk
+red5-cloud/development/sdks/index.md
+red5-cloud/development/sdks/android-sdk
+red5-cloud/development/sdks/ios-sdk
+red5-cloud/development/sdks/conference-sdk
+red5-cloud/development/sdks/backend-sdk

@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "3c399930-b26a-4f11-b568-48f0de62ea78",
+		"name": "Restreamer API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List IP Cameras",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/camera1\",\n    \"context\": \"live\",\n    \"name\": \"camera1\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"ipcam\"\n    }\n}\n"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create IP Camera - big sky resort",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/camera1\",\n    \"context\": \"axis-media\",\n    \"name\": \"media.amp\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"ipcam\",\n        \"action\": \"create\",\n        \"scopename\": \"live\",\n        \"outputname\": \"bigskyresort\",\n        \"host\": \"webcam01.bigskyresort.com\",\n        \"port\": 554\n    }\n}"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kill BigSkyResort Stream",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/bigskyresort\",\n    \"context\": \"live\",\n    \"name\": \"bigskyresort\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"ipcam\",\n        \"action\": \"kill\"\n    }\n}\n"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kill IP Camera Connection",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/camera1\",\n    \"context\": \"live\",\n    \"name\": \"camera1\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"ipcam\",\n        \"action\": \"kill\"\n    }\n}\n"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MPEG-TS Listing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/stream1\",\n    \"context\": \"live\",\n    \"name\": \"stream1\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"mpegts\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MPEG-TS Stream Create - Multicast",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/stream1\",\n    \"context\": \"live\",\n    \"name\": \"stream1\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"mpegts\",\n        \"action\": \"create\",\n        \"cast\": \"multicast\",\n        \"ip\": \"239.5.5.5\",\n        \"port\": 5555\n    }\n}"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MPEG-TS Stream Create - Unicast",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/stream1\",\n    \"context\": \"live\",\n    \"name\": \"stream1\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"mpegts\",\n        \"action\": \"create\",\n        \"cast\": \"unicast\",\n        \"ip\": \"239.5.5.5\",\n        \"port\": 1234\n    }\n}"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MPEG-TS Stream Kill",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"guid\": \"live/stream1\",\n    \"context\": \"live\",\n    \"name\": \"stream1\",\n    \"level\": 0,\n    \"parameters\": {\n        \"type\": \"mpegts\",\n        \"action\": \"kill\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://{server-url}/live/restream",
+					"protocol": "https",
+					"host": [
+						"{server}",
+						"{domain}",
+						"{extension}"
+					],
+					"path": [
+						"live",
+						"restream"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
