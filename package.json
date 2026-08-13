@@ -1,0 +1,43 @@
+{
+  "name": "red5pro-skills",
+  "version": "0.1.0",
+  "description": "Install Red5's AI skills (red5pro, agora-to-red5-cloud-pubnub-migration) into Claude Code, Codex, and other skill-aware AI coding tools with one command.",
+  "type": "module",
+  "bin": {
+    "red5pro-skills": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "homepage": "https://github.com/red5pro/red5pro-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red5pro/red5pro-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/red5pro/red5pro-skills/issues"
+  },
+  "keywords": [
+    "red5",
+    "red5pro",
+    "ai",
+    "skill",
+    "claude",
+    "codex",
+    "webrtc",
+    "streaming"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tar": "^7.5.22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
