@@ -28,12 +28,13 @@ Helps a user currently on, or evaluating, Agora understand the conceptual equiva
 ## Workflow
 
 1. Load [references/migration-guide.md](references/migration-guide.md) for the concept-mapping table and migration checklist.
-2. For actual Red5 Cloud **implementation** detail (SDK code, authentication setup, PubNub key retrieval), route to the main `red5pro` skill instead of duplicating it here:
+2. For chat/messaging and image/file-sharing **code**, use [examples/](examples/) — real, copy-pasteable examples for HTML5, iOS, and Android, each labeled with how it was verified (some corrected against actual SDK source, not just published docs — see [examples/README.md](examples/README.md)).
+3. For other Red5 Cloud **implementation** detail (video/audio SDK code, authentication setup, PubNub key retrieval), route to the main `red5pro` skill instead of duplicating it here:
    - Client SDKs (Web/Android/iOS/Conference): [../red5pro/references/sdks/README.md](../red5pro/references/sdks/README.md)
-   - Red5 Cloud + PubNub integration guide: [../red5pro/references/_docs-cache/red5-cloud/users-guide/red5-pubnub-integration.md](../red5pro/references/_docs-cache/red5-cloud/users-guide/red5-pubnub-integration.md)
+   - Red5 Cloud + PubNub integration guide: [../red5pro/references/_docs-cache/red5-cloud/users-guide/red5-pubnub-integration.md](../red5pro/references/_docs-cache/red5-cloud/users-guide/red5-pubnub-integration.md) (note: as of this writing, this cached copy predates the messaging/file-sharing sections covered by [examples/](examples/) — prefer examples/ for those two topics until the cache is refreshed)
    - Authentication / Digest Token / token generation: [../red5pro/references/authentication/README.md](../red5pro/references/authentication/README.md), [../red5pro/references/sdks/backend-sdk.md](../red5pro/references/sdks/backend-sdk.md)
    - Red5 Cloud overview (regions, node groups, architecture): [../red5pro/references/cloud/README.md](../red5pro/references/cloud/README.md)
-3. Never assert a specific current Agora API/class/method name, SDK version, or pricing figure as verified fact — flag it as something the user should confirm against Agora's own current docs.
+4. Never assert a specific current Agora API/class/method name, SDK version, or pricing figure as verified fact — flag it as something the user should confirm against Agora's own current docs.
 
 ## Guardrails
 
