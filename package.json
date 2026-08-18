@@ -2,6 +2,7 @@
   "name": "red5pro-skills",
   "version": "0.1.0",
   "description": "Install Red5's AI skills (red5pro, agora-to-red5-cloud-pubnub-migration) into Claude Code, Codex, and other skill-aware AI coding tools with one command.",
+  "author": "Red5 Pro Inc.",
   "type": "module",
   "bin": {
     "red5pro-skills": "./bin/cli.js"
