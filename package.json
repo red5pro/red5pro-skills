@@ -1,6 +1,6 @@
 {
   "name": "red5pro-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install Red5's AI skills (red5pro, red5-cloud-pubnub) into Claude Code, Codex, and other skill-aware AI coding tools with one command.",
   "author": "Red5 Pro Inc.",
   "type": "module",
