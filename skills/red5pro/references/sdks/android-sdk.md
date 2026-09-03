@@ -1,6 +1,6 @@
 # Red5 Cloud Android SDK
 
-Source: local cache [`../_docs-cache/red5-cloud/development/sdks/android-sdk/`](../_docs-cache/red5-cloud/development/sdks/android-sdk/), mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/)
+Source: live docs at [https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/)
 
 Build low-latency streaming apps that publish via WHIP and subscribe (play) via WHEP. Compatible with both Red5 Cloud (Stream Manager) and standalone Red5 Pro servers — same client class, different builder config.
 
@@ -134,4 +134,4 @@ Polls WebRTC stats every 2s by default (`.setStatsCollectorEnabled(true)`, `.set
 
 ## When to Fetch More
 
-Full class/method signatures live in the local cache at [`../_docs-cache/red5-cloud/development/sdks/android-sdk/api-reference.md`](../_docs-cache/red5-cloud/development/sdks/android-sdk/api-reference.md) (mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/api-reference](https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/api-reference)) — check it for anything not covered above rather than guessing a method name.
+Full class/method signatures live at [https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/api-reference/](https://www.red5.net/docs/red5-cloud/development/sdks/android-sdk/api-reference/) — check it for anything not covered above rather than guessing a method name.

@@ -8,11 +8,6 @@
 #   4. No absolute local paths (e.g. /Users/...) leaked into content
 #   5. No blocklisted terms (scripts/blocklist-terms.txt)
 #
-# Each skill's references/_docs-cache/ (where present) is a generated mirror
-# of third-party docs content (see scripts/sync-docs-cache.sh) and is
-# excluded from checks 3-5: we don't author it and don't police its wording
-# or internal link structure.
-#
 # Usage: bash scripts/validate-skills.sh
 
 set -uo pipefail
@@ -28,9 +23,9 @@ fail() { echo "FAIL: $1"; fail_count=$((fail_count + 1)); }
 warn() { echo "WARN: $1"; warn_count=$((warn_count + 1)); }
 
 # Markdown files to police for path/link/term hygiene: everything under
-# skills/ except each skill's generated docs cache.
+# skills/.
 content_files() {
-  find "$SKILLS_ROOT" -name '*.md' -not -path '*/_docs-cache/*'
+  find "$SKILLS_ROOT" -name '*.md'
 }
 
 echo "== 1. Frontmatter checks =="

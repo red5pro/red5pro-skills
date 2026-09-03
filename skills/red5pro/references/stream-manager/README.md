@@ -1,6 +1,6 @@
 # Stream Manager 2.0
 
-Source: local cache [`../_docs-cache/red5-pro/users-guide/stream-manager-2.0/`](../_docs-cache/red5-pro/users-guide/stream-manager-2.0/), [`../_docs-cache/red5-pro/development/api/stream-manager-2.0/`](../_docs-cache/red5-pro/development/api/stream-manager-2.0/) — mirrors [https://www.red5.net/docs/red5-pro/users-guide/stream-manager-2.0/](https://www.red5.net/docs/red5-pro/users-guide/stream-manager-2.0/), [https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/](https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/users-guide/stream-manager-2.0/](https://www.red5.net/docs/red5-pro/users-guide/stream-manager-2.0/), [https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/](https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/)
 
 The Stream Manager is Red5 Pro's streaming-architecture management and orchestration service. It automates creating/deleting Red5 Pro server instances and coordinates broadcasters/subscribers to the right server nodes. It is also the backbone of **Red5 Cloud** — see [../cloud/README.md](../cloud/README.md).
 
@@ -35,4 +35,4 @@ An OpenAPI/Swagger UI and a CURL cheat-sheet are documented for exploring/testin
 
 ## When to Fetch More
 
-Exact request/response schemas for each Stream Manager 2.0 API, and the restreamer migration notes for moving from Stream Manager 1 to 2.0, should be pulled from the local cache at [`../_docs-cache/red5-pro/development/api/stream-manager-2.0/`](../_docs-cache/red5-pro/development/api/stream-manager-2.0/) (or [https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/](https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/) for the current version) — don't guess at field names or endpoint paths.
+Exact request/response schemas for each Stream Manager 2.0 API, and the restreamer migration notes for moving from Stream Manager 1 to 2.0, should be pulled from the live docs at [https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/](https://www.red5.net/docs/red5-pro/development/api/stream-manager-2.0/) — don't guess at field names or endpoint paths.

@@ -1,6 +1,6 @@
 # Streaming Features
 
-Source: local cache [`../_docs-cache/red5-pro/users-guide/`](../_docs-cache/red5-pro/users-guide/){restreamer,transcoder,mixer,recording-and-vod,social-pusher,red5-pro-stream-aliasing-overview.md,red5-pro-single-port-muxing.md,red5-pro-webhooks-overview.md,red5-pro-thumbnails.md,red5-pro-castlabs-drm.md,red5-pro-castlabs-watermarking.md}, mirrors [https://www.red5.net/docs/red5-pro/users-guide/](https://www.red5.net/docs/red5-pro/users-guide/) same paths.
+Source: live docs at [https://www.red5.net/docs/red5-pro/users-guide/](https://www.red5.net/docs/red5-pro/users-guide/){restreamer,transcoder,mixer,recording-and-vod,social-pusher,red5-pro-stream-aliasing-overview,red5-pro-single-port-muxing,red5-pro-webhooks-overview,red5-pro-thumbnails,red5-pro-castlabs-drm,red5-pro-castlabs-watermarking}/
 
 ## Restreamer
 
@@ -57,4 +57,4 @@ Note: VOD (playback of a completed recording) is distinct from **DVR** (rewind/s
 
 ## When to Fetch More
 
-Exact REST provision JSON schemas (restreamer/transcoder/mixer), the full webhook event/payload catalog, and the Castlabs DRM/watermarking integration code are release-specific — pull them from the local cache at [`../_docs-cache/red5-pro/development/api/`](../_docs-cache/red5-pro/development/api/) or the corresponding page under [https://www.red5.net/docs/red5-pro/development/api/](https://www.red5.net/docs/red5-pro/development/api/) (or the specific feature's users-guide page) before writing integration code.
+Exact REST provision JSON schemas (restreamer/transcoder/mixer), the full webhook event/payload catalog, and the Castlabs DRM/watermarking integration code are release-specific — pull them from the live docs at [https://www.red5.net/docs/red5-pro/development/api/](https://www.red5.net/docs/red5-pro/development/api/) (or the specific feature's users-guide page) before writing integration code.

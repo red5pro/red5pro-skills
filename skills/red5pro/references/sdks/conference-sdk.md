@@ -1,6 +1,6 @@
 # Red5 Pro Conference SDK (Web)
 
-Source: local cache [`../_docs-cache/red5-cloud/development/sdks/conference-sdk/`](../_docs-cache/red5-cloud/development/sdks/conference-sdk/), mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/)
+Source: live docs at [https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/)
 
 A professional-grade toolkit for building multi-party video conferencing web apps on Red5 Pro / Red5 Cloud. Handles room management, WHIP/WHEP media streaming, WebRTC statistics, PubNub-powered interactivity (chat/presence), and advanced features like virtual backgrounds and local recording.
 
@@ -66,4 +66,4 @@ The `token` passed to `join(...)` is expected to come from a backend-issued conf
 
 ## When to Fetch More
 
-The complete event catalog, participant-management methods beyond `subscribe()`, and the virtual-background/local-recording APIs are documented in the local cache at [`../_docs-cache/red5-cloud/development/sdks/conference-sdk/api-reference.md`](../_docs-cache/red5-cloud/development/sdks/conference-sdk/api-reference.md) and [`../_docs-cache/red5-cloud/development/sdks/conference-sdk/examples.md`](../_docs-cache/red5-cloud/development/sdks/conference-sdk/examples.md) (mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/){api-reference,examples}) — pull those before implementing anything beyond the join/publish/subscribe flow shown above.
+The complete event catalog, participant-management methods beyond `subscribe()`, and the virtual-background/local-recording APIs are documented at [https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/conference-sdk/){api-reference,examples}/ — pull those before implementing anything beyond the join/publish/subscribe flow shown above.

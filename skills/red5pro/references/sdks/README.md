@@ -1,6 +1,6 @@
 # Client & Backend SDKs
 
-Source: local cache [`../_docs-cache/red5-cloud/development/sdks/`](../_docs-cache/red5-cloud/development/sdks/), [`../_docs-cache/red5-pro/development/sdks/`](../_docs-cache/red5-pro/development/sdks/) — mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/](https://www.red5.net/docs/red5-cloud/development/sdks/), [https://www.red5.net/docs/red5-pro/development/sdks/](https://www.red5.net/docs/red5-pro/development/sdks/)
+Source: live docs at [https://www.red5.net/docs/red5-cloud/development/sdks/](https://www.red5.net/docs/red5-cloud/development/sdks/), [https://www.red5.net/docs/red5-pro/development/sdks/](https://www.red5.net/docs/red5-pro/development/sdks/)
 
 All Red5 client SDKs work against **both** a standalone Red5 Pro server (host/IP + port) and **Red5 Cloud** (Stream Manager host + node group) — the same client classes and publish/subscribe calls apply; only the connection config differs. See each platform file for the exact config shape.
 

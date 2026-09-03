@@ -1,6 +1,6 @@
 # Streaming Protocols
 
-Source: local cache [`../_docs-cache/red5-pro/users-guide/protocols/`](../_docs-cache/red5-pro/users-guide/protocols/), mirrors [https://www.red5.net/docs/red5-pro/users-guide/protocols/](https://www.red5.net/docs/red5-pro/users-guide/protocols/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/users-guide/protocols/](https://www.red5.net/docs/red5-pro/users-guide/protocols/)
 
 Red5 Pro supports several ingest/playback protocols simultaneously on the same server. Which one you use depends on the client.
 
@@ -8,7 +8,7 @@ Red5 Pro supports several ingest/playback protocols simultaneously on the same s
 
 Runs on the standard HTTPS port (443). Publishing via WebRTC **requires a valid SSL certificate** for a registered domain — see [../server/installation.md#ssl](../server/installation.md#ssl). Without SSL you can only do local (same-machine or same-LAN, subscribe-only) testing; some browsers block insecure WebRTC even on `localhost`.
 
-Since the `11.0.0` Red5 Pro WebRTC SDK release, the server and SDK support **WHIP** (WebRTC-HTTP Ingest Protocol) for publishing and **WHEP** (WebRTC-HTTP Egress Protocol) for playback — HTTP/S-negotiated WebRTC that removes the need for a WebSocket round trip for signaling, giving faster connection times. `WHIPClient`/`WHEPClient` were introduced in `11.0.0` as extensions of the older WebSocket-based `RTCPublisher`/`RTCSubscriber` — but as of the `15.0.0` full TypeScript rewrite, `RTCPublisher`/`RTCSubscriber` were **removed as a breaking change**; `WHIPClient`/`WHEPClient` are now the only clients (see [../sdks/web-webrtc-sdk.md](../sdks/web-webrtc-sdk.md)). Enabling WHIP/WHEP on a self-hosted server requires adding a filter (ahead of the WebSocket filter, but after any CORS filter) to the webapp's `web.xml` — see the local cache at [`../_docs-cache/red5-pro/users-guide/red5-pro-whip-and-whep-configuration.md`](../_docs-cache/red5-pro/users-guide/red5-pro-whip-and-whep-configuration.md) (mirrors [https://www.red5.net/docs/red5-pro/users-guide/red5-pro-whip-and-whep-configuration](https://www.red5.net/docs/red5-pro/users-guide/red5-pro-whip-and-whep-configuration)).
+Since the `11.0.0` Red5 Pro WebRTC SDK release, the server and SDK support **WHIP** (WebRTC-HTTP Ingest Protocol) for publishing and **WHEP** (WebRTC-HTTP Egress Protocol) for playback — HTTP/S-negotiated WebRTC that removes the need for a WebSocket round trip for signaling, giving faster connection times. `WHIPClient`/`WHEPClient` were introduced in `11.0.0` as extensions of the older WebSocket-based `RTCPublisher`/`RTCSubscriber` — but as of the `15.0.0` full TypeScript rewrite, `RTCPublisher`/`RTCSubscriber` were **removed as a breaking change**; `WHIPClient`/`WHEPClient` are now the only clients (see [../sdks/web-webrtc-sdk.md](../sdks/web-webrtc-sdk.md)). Enabling WHIP/WHEP on a self-hosted server requires adding a filter (ahead of the WebSocket filter, but after any CORS filter) to the webapp's `web.xml` — see [https://www.red5.net/docs/red5-pro/users-guide/red5-pro-whip-and-whep-configuration/](https://www.red5.net/docs/red5-pro/users-guide/red5-pro-whip-and-whep-configuration/).
 
 Common WebRTC terms you'll encounter in configuration/debugging: **ICE** (connectivity establishment / NAT traversal), **STUN**/**TURN** (NAT traversal helpers), **DTLS** (UDP + security), **SDP** (session description), **NACK**/**PLI** (loss-recovery signaling).
 
@@ -17,7 +17,7 @@ Common WebRTC terms you'll encounter in configuration/debugging: **ICE** (connec
 Most "won't connect" reports come down to one of these — check in order:
 
 1. **No/invalid SSL certificate on a non-localhost host.** WebRTC publish requires HTTPS on a registered domain (see [../server/installation.md#ssl](../server/installation.md#ssl)); some browsers silently refuse insecure WebRTC even on `localhost`.
-2. **Firewall/NAT blocking the media path.** ICE negotiates a peer connection over UDP; a restrictive corporate firewall or symmetric NAT on either end can block it even though the HTTPS/signaling request succeeds. A TURN server (relaying media instead of a direct peer path) is usually the fix — see [`../_docs-cache/red5-pro/users-guide/protocols/webrtc/red5-pro-turnstun.md`](../_docs-cache/red5-pro/users-guide/protocols/webrtc/red5-pro-turnstun.md) for running your own.
+2. **Firewall/NAT blocking the media path.** ICE negotiates a peer connection over UDP; a restrictive corporate firewall or symmetric NAT on either end can block it even though the HTTPS/signaling request succeeds. A TURN server (relaying media instead of a direct peer path) is usually the fix — see [https://www.red5.net/docs/red5-pro/users-guide/protocols/webrtc/red5-pro-turnstun/](https://www.red5.net/docs/red5-pro/users-guide/protocols/webrtc/red5-pro-turnstun/) for running your own.
 3. **Wrong endpoint/app/stream-name construction** — see Connection URLs below; a WHIP/WHEP endpoint pointed at the wrong app scope or node group fails at the signaling step, before ICE even starts.
 4. **Auth rejecting the connection silently as a "failed to connect"** rather than a clear 401/403 in application logs — see [../authentication/README.md](../authentication/README.md).
 
@@ -65,4 +65,4 @@ Recordings are captured in Red5 Pro's native format; a documented pipeline (post
 
 ## When to Fetch More
 
-Codec-level details, FFmpeg build/server-configuration flags, and third-party publisher software version specifics change independently of Red5 Pro — verify against the local cache at [`../_docs-cache/red5-pro/users-guide/protocols/`](../_docs-cache/red5-pro/users-guide/protocols/) (or the current live pages at [https://www.red5.net/docs/red5-pro/users-guide/protocols/](https://www.red5.net/docs/red5-pro/users-guide/protocols/)) for the protocol in question before giving exact command-line flags.
+Codec-level details, FFmpeg build/server-configuration flags, and third-party publisher software version specifics change independently of Red5 Pro — verify against the live docs at [https://www.red5.net/docs/red5-pro/users-guide/protocols/](https://www.red5.net/docs/red5-pro/users-guide/protocols/) for the protocol in question before giving exact command-line flags.

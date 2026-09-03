@@ -1,6 +1,0 @@
----
-title: Adaptive Bitrate
-description: ""
----
-
-

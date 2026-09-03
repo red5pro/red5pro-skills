@@ -1,6 +1,6 @@
 # Red5 Pro WebRTC SDK (Web)
 
-Source: local cache [`../_docs-cache/red5-pro/development/sdks/red5-webrtc-sdk/`](../_docs-cache/red5-pro/development/sdks/red5-webrtc-sdk/), mirrors [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/)
 
 Package: `red5pro-webrtc-sdk` (npm/yarn, or CDN script tag).
 
@@ -114,8 +114,8 @@ const config = {
 
 ## ABR (Adaptive Bitrate)
 
-`WHEPClient` supports subscribing to an ABR-enabled stream with dynamic quality upgrade/downgrade based on network conditions (config property: `maintainStreamVariant`) — the client-side counterpart to the server-side Transcoder covered in [../streaming-features/README.md#transcoder--abr](../streaming-features/README.md#transcoder--abr). Publishing multiple provisioned ABR variants, or publishing through a Transcoder, is also supported. See the local cache at [`../_docs-cache/red5-pro/development/sdks/red5-webrtc-sdk/`](../_docs-cache/red5-pro/development/sdks/red5-webrtc-sdk/) for the `red5-webrtc-sdk-abr-*.md` files (overview, requirements, publishing, subscribing, JSON schema) before implementing — this is a non-trivial feature area not summarized here.
+`WHEPClient` supports subscribing to an ABR-enabled stream with dynamic quality upgrade/downgrade based on network conditions (config property: `maintainStreamVariant`) — the client-side counterpart to the server-side Transcoder covered in [../streaming-features/README.md#transcoder--abr](../streaming-features/README.md#transcoder--abr). Publishing multiple provisioned ABR variants, or publishing through a Transcoder, is also supported. See the live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/) for the ABR pages (overview, requirements, publishing, subscribing, JSON schema) before implementing — this is a non-trivial feature area not summarized here.
 
 ## When to Fetch More
 
-Full event-type catalogs, error codes, the alternate "construct with a full WHIP/WHEP endpoint URL" calling convention (auto-starts broadcast/playback, skips a separate `publish()`/`subscribe()` call), and advanced config (custom ICE servers, encoder profile tuning) should be pulled from the local cache at [`../_docs-cache/red5-pro/development/sdks/red5-webrtc-sdk/`](../_docs-cache/red5-pro/development/sdks/red5-webrtc-sdk/) (or [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/) for the current version) for the SDK version in use.
+Full event-type catalogs, error codes, the alternate "construct with a full WHIP/WHEP endpoint URL" calling convention (auto-starts broadcast/playback, skips a separate `publish()`/`subscribe()` call), and advanced config (custom ICE servers, encoder profile tuning) should be pulled from the live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/) for the SDK version in use.

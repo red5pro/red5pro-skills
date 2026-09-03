@@ -1,6 +1,6 @@
 # Red5 Cloud iOS SDK
 
-Source: local cache [`../_docs-cache/red5-cloud/development/sdks/ios-sdk/`](../_docs-cache/red5-cloud/development/sdks/ios-sdk/), mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/)
+Source: live docs at [https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/)
 
 Build low-latency streaming apps that publish via WHIP and subscribe via WHEP. Works against both Red5 Cloud (Stream Manager) and standalone Red5 Pro servers. SwiftUI-compatible.
 
@@ -114,4 +114,4 @@ The SDK docs ship self-contained single-feature example apps (copy `Config.swift
 
 ## When to Fetch More
 
-Full class/protocol/enum reference lives in the local cache at [`../_docs-cache/red5-cloud/development/sdks/ios-sdk/api-reference.md`](../_docs-cache/red5-cloud/development/sdks/ios-sdk/api-reference.md) (mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/api-reference](https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/api-reference)) — check it before inventing a method signature not shown above.
+Full class/protocol/enum reference lives at [https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/api-reference/](https://www.red5.net/docs/red5-cloud/development/sdks/ios-sdk/api-reference/) — check it before inventing a method signature not shown above.
