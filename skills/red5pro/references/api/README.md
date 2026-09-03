@@ -1,6 +1,6 @@
 # Server & Management REST APIs
 
-Source: local cache [`../_docs-cache/red5-pro/development/api/`](../_docs-cache/red5-pro/development/api/), mirrors [https://www.red5.net/docs/red5-pro/development/api/](https://www.red5.net/docs/red5-pro/development/api/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/development/api/](https://www.red5.net/docs/red5-pro/development/api/)
 
 These are the HTTP REST APIs for controlling and inspecting a Red5 Pro deployment — distinct from the client SDKs (which handle publish/subscribe media). All are callable from any standard REST client (Red5 provides a Postman collection for the Server API).
 
@@ -40,8 +40,8 @@ Smaller, standalone REST APIs not covered above — named here so they're discov
 
 ## Archive
 
-Older/superseded API versions (Stream Manager REST API 1.0 through 4.0, the legacy Autoscale Client API, and the legacy Round Trip Auth doc) are kept under the local cache at [`../_docs-cache/red5-pro/development/api/archive/`](../_docs-cache/red5-pro/development/api/archive/) (mirrors [https://www.red5.net/docs/red5-pro/development/api/archive/](https://www.red5.net/docs/red5-pro/development/api/archive/)) for reference on legacy deployments — do not use these for new integrations; use Stream Manager 2.0 instead.
+Older/superseded API versions (Stream Manager REST API 1.0 through 4.0, the legacy Autoscale Client API, and the legacy Round Trip Auth doc) are documented at [https://www.red5.net/docs/red5-pro/development/api/archive/](https://www.red5.net/docs/red5-pro/development/api/archive/) for reference on legacy deployments — do not use these for new integrations; use Stream Manager 2.0 instead.
 
 ## When to Fetch More
 
-This is a REST-API surface — exact endpoint paths, request/response JSON schemas, and auth headers are exactly the kind of fast-moving detail that should be read from the local cache at [`../_docs-cache/red5-pro/development/api/`](../_docs-cache/red5-pro/development/api/){server,mixer,restreamer,transcoder,authentication,stream-manager-2.0}/ (or pulled live from [https://www.red5.net/docs/red5-pro/development/api/](https://www.red5.net/docs/red5-pro/development/api/), or the bundled Postman collection, for the current version) rather than reconstructed from memory. Never fabricate a field name or endpoint.
+This is a REST-API surface — exact endpoint paths, request/response JSON schemas, and auth headers are exactly the kind of fast-moving detail that should be pulled live from [https://www.red5.net/docs/red5-pro/development/api/](https://www.red5.net/docs/red5-pro/development/api/){server,mixer,restreamer,transcoder,authentication,stream-manager-2.0}/ (or the bundled Postman collection) rather than reconstructed from memory. Never fabricate a field name or endpoint.
