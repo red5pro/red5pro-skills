@@ -43,7 +43,7 @@ that aren't actually written there).
 - The Clustering Plugin supports basic (subscriber-only) and advanced (publisher + subscriber) clustering.
 - WebRTC publishing needs a valid SSL certificate on a non-localhost host.
 **Must NOT:**
-- Invent specific shell/package-manager commands — those should be deferred to `_docs-cache`/live docs per "When to Fetch More".
+- Invent specific shell/package-manager commands — those should be deferred to the live docs per "When to Fetch More".
 
 #### protocols-whip
 **Prompt:** "What's the difference between WHIP and plain RTMP for publishing to Red5 Pro?"
@@ -98,7 +98,7 @@ that aren't actually written there).
 **Expected route:** `references/api/README.md`
 **Must mention:**
 - The Server API covers server/application/client/stream statistics over REST.
-- Exact endpoint paths and JSON schemas are not fabricated — deferred to `_docs-cache/red5-pro/development/api/` or the live docs.
+- Exact endpoint paths and JSON schemas are not fabricated — deferred to the live docs at `red5.net/docs/red5-pro/development/api/`.
 **Must NOT:**
 - Invent a specific endpoint path or field name not present in the reference file.
 

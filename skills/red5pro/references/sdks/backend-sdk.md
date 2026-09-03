@@ -1,6 +1,6 @@
 # Backend SDK (Token Generation)
 
-Source: local cache [`../_docs-cache/red5-cloud/development/sdks/backend-sdk/`](../_docs-cache/red5-cloud/development/sdks/backend-sdk/){node,java,go-golang}/, mirrors [https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/){node,java,go-golang}/
+Source: live docs at [https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/){node,java,go-golang}/
 
 Server-side SDKs for generating short-lived, role-scoped access tokens for **video conferences** and **chat messaging**, so clients never see your master credentials. Available for **Node**, **Java**, and **Go** — all three expose the same conceptual API (conference token generation, chat token generation, role-based permissions, expiration control).
 
@@ -64,4 +64,4 @@ Generate a token for secure real-time chat. Node signature: `getChatToken(userId
 
 ## When to Fetch More
 
-Full Java/Go method signatures beyond `getConferenceToken`/token-role tables, and any batch/refresh/revoke token APIs, should be confirmed against the local cache at [`../_docs-cache/red5-cloud/development/sdks/backend-sdk/`](../_docs-cache/red5-cloud/development/sdks/backend-sdk/){java,go-golang}/ (or [https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/){java,go-golang}/ for the current version) — package availability in particular should be re-checked with Red5 support since it was unpublished at time of writing.
+Full Java/Go method signatures beyond `getConferenceToken`/token-role tables, and any batch/refresh/revoke token APIs, should be confirmed against the live docs at [https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/](https://www.red5.net/docs/red5-cloud/development/sdks/backend-sdk/){java,go-golang}/ — package availability in particular should be re-checked with Red5 support since it was unpublished at time of writing.

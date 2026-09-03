@@ -1,6 +1,6 @@
 # Clustering
 
-Source: local cache [`../_docs-cache/red5-pro-basics/streaming-glossary.md`](../_docs-cache/red5-pro-basics/streaming-glossary.md), [`../_docs-cache/red5-pro/users-guide/clustering/`](../_docs-cache/red5-pro/users-guide/clustering/) — mirrors [https://www.red5.net/docs/red5-pro-basics/streaming-glossary](https://www.red5.net/docs/red5-pro-basics/streaming-glossary), [https://www.red5.net/docs/red5-pro/users-guide/clustering/](https://www.red5.net/docs/red5-pro/users-guide/clustering/)
+Source: live docs at [https://www.red5.net/docs/red5-pro-basics/streaming-glossary/](https://www.red5.net/docs/red5-pro-basics/streaming-glossary/), [https://www.red5.net/docs/red5-pro/users-guide/clustering/](https://www.red5.net/docs/red5-pro/users-guide/clustering/)
 
 A **cluster** is a set of active servers that together make real-time streams available, used when a single server can't handle the number of connections/streams required. A stand-alone server is an origin and an edge combined; clustering splits those responsibilities across nodes.
 
@@ -31,4 +31,4 @@ Example: 1 origin, 1 edge, 1 stream → total count 1, edge-proxy 1, restreamers
 
 ## When to Fetch More
 
-Exact `cluster.xml` field-level config, NodeGroupConfig JSON schemas, and license-type details change per release — check the local cache at [`../_docs-cache/red5-pro/users-guide/clustering/`](../_docs-cache/red5-pro/users-guide/clustering/) (or [https://www.red5.net/docs/red5-pro/users-guide/clustering/](https://www.red5.net/docs/red5-pro/users-guide/clustering/) for the current version) rather than reconstructing config syntax from memory.
+Exact `cluster.xml` field-level config, NodeGroupConfig JSON schemas, and license-type details change per release — check the live docs at [https://www.red5.net/docs/red5-pro/users-guide/clustering/](https://www.red5.net/docs/red5-pro/users-guide/clustering/) rather than reconstructing config syntax from memory.

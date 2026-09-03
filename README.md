@@ -27,7 +27,7 @@ Copy the skill directory you want (e.g. `skills/red5pro/`) into wherever your AI
 
 - **[AGENTS.md](AGENTS.md)** — repository structure, the source-of-truth/freeze-forever rule, naming conventions, and the process for adding a new topic or a whole new skill. Read this before contributing.
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** — the `red5pro` skill's internal 4-layer progressive-disclosure design (why content is split the way it is).
-- **`scripts/`** — `validate-skills.sh` (static checks: frontmatter, broken links, leaked local paths, blocklisted terms) and `sync-docs-cache.sh` (mirrors the specific `red5pro-docs` pages the `red5pro` skill references into a local cache, so the skill works for headless/automated consumers without live network access).
+- **`scripts/`** — `validate-skills.sh` (static checks: frontmatter, broken links, leaked local paths, blocklisted terms).
 - **`tests/eval-cases.md`** — prompt → expected-route eval cases for manually verifying skill behavior; no automated harness yet.
 - **`bin/`, `src/`** — `red5pro-skills` npx installer sources.
 

@@ -1,6 +1,6 @@
 # Installation
 
-Source: local cache [`../_docs-cache/red5-pro/users-guide/installation/`](../_docs-cache/red5-pro/users-guide/installation/), mirrors [https://www.red5.net/docs/red5-pro/users-guide/installation/](https://www.red5.net/docs/red5-pro/users-guide/installation/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/users-guide/installation/](https://www.red5.net/docs/red5-pro/users-guide/installation/)
 
 ## Stand-Alone
 
@@ -36,4 +36,4 @@ A separate guide covers configuring SSL on Windows, and another covers using non
 
 ## When to Fetch More
 
-Exact shell commands, package names, and file paths for each OS/version combination change between releases — pull the current install guide for the target OS and Red5 Pro version from the local cache at [`../_docs-cache/red5-pro/users-guide/installation/`](../_docs-cache/red5-pro/users-guide/installation/) (or [https://www.red5.net/docs/red5-pro/users-guide/installation/](https://www.red5.net/docs/red5-pro/users-guide/installation/) for the current live version) rather than reconstructing commands from memory.
+Exact shell commands, package names, and file paths for each OS/version combination change between releases — pull the current install guide for the target OS and Red5 Pro version from the live docs at [https://www.red5.net/docs/red5-pro/users-guide/installation/](https://www.red5.net/docs/red5-pro/users-guide/installation/) rather than reconstructing commands from memory.

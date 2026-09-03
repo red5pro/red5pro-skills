@@ -17,16 +17,16 @@ Navigation: `SKILL.md` → topic area `README.md` → topic file (e.g., `android
 
 ## Link-First vs. Inline Strategy
 
-Not all content belongs inline. The skill uses two strategies depending on how fast the underlying `red5pro-docs` content moves and how well it documents implementation detail:
+Not all content belongs inline. The skill uses two strategies depending on how fast the underlying [red5.net/docs](https://www.red5.net/docs/) content moves and how well it documents implementation detail:
 
 | Area | Strategy | Why |
 |---|---|---|
-| **Client/Backend SDKs** (Web, Android, iOS, Conference, Backend, Core) | Inline code examples | SDK builder patterns, method names, and event callbacks are stable per major version and `red5pro-docs` doesn't always show them concisely |
+| **Client/Backend SDKs** (Web, Android, iOS, Conference, Backend, Core) | Inline code examples | SDK builder patterns, method names, and event callbacks are stable per major version and the docs don't always show them concisely |
 | **Protocols, Authentication, Clustering** | Inline concepts | Stable concepts (WebRTC/RTMP/RTSP/HLS behavior, node roles, auth mechanism trade-offs) that rarely change |
-| **REST APIs** (`api/`, Stream Manager 2.0) | TOC + "When to Fetch More" pointers | Exact request/response schemas are release-specific and best read directly from `red5pro-docs/website/docs/red5-pro/development/api/` |
+| **REST APIs** (`api/`, Stream Manager 2.0) | TOC + "When to Fetch More" pointers | Exact request/response schemas are release-specific and best read directly from `https://www.red5.net/docs/red5-pro/development/api/` |
 | **Server Installation** | TOC + pointers | OS-specific commands, license activation, and upgrade steps change per release |
 
-Every reference file that isn't fully inline ends with a **"When to Fetch More"** section naming the exact `red5pro-docs` path to check instead of guessing.
+Every reference file that isn't fully inline ends with a **"When to Fetch More"** section naming the exact live `red5.net/docs` URL to check instead of guessing — there is no local docs mirror in this repo, so "fetch more" always means a live lookup (via `curl`, not a WebFetch-style tool — see `red5pro/SKILL.md`'s Documentation Lookup section).
 
 ## File Structure
 
@@ -81,8 +81,8 @@ skills/
 
 - Edit the specific Layer 4 file
 - **Inline files** (SDKs, protocols, authentication, clustering): keep code examples and mechanism descriptions current
-- **Link-first files** (api/, server installation): update the "When to Fetch More" pointer if `red5pro-docs` restructures
-- Don't duplicate content that lives in `red5pro-docs` verbatim beyond what's needed for routing and stable code patterns — link to the specific page instead
+- **Link-first files** (api/, server installation): update the "When to Fetch More" pointer if [red5.net/docs](https://www.red5.net/docs/) restructures
+- Don't duplicate content that lives in the official docs verbatim beyond what's needed for routing and stable code patterns — link to the specific page instead
 
 ### Verifying URLs
 

@@ -1,10 +1,10 @@
 # AGENTS.md
 
-This repository contains AI agent skills for building with [Red5](https://www.red5.net) — Red5 Pro (self-hosted) and Red5 Cloud (managed PaaS) — covering server setup/clustering, streaming protocols, authentication, streaming features, Stream Manager 2.0, and client/backend SDKs. Content is derived from the `red5pro-docs` documentation.
+This repository contains AI agent skills for building with [Red5](https://www.red5.net) — Red5 Pro (self-hosted) and Red5 Cloud (managed PaaS) — covering server setup/clustering, streaming protocols, authentication, streaming features, Stream Manager 2.0, and client/backend SDKs. Content is derived from the official docs at [red5.net/docs](https://www.red5.net/docs/).
 
 Multiple skills live side by side under `skills/`:
 
-- **`red5pro`** — the primary technical reference skill; every claim traces back to an actual `red5pro-docs` page (see Source-of-Truth rule below).
+- **`red5pro`** — the primary technical reference skill; every claim traces back to an actual page at [red5.net/docs](https://www.red5.net/docs/) (see Source-of-Truth rule below).
 - **`red5-cloud-pubnub`** — a narrower skill covering Red5 Cloud's built-in PubNub integration (chat/presence/image-file-sharing, with copy-pasteable HTML5/iOS/Android code), plus positioning-flavored Agora → Red5 Cloud + PubNub migration guidance for the PubNub campaign. Its Red5-side claims link into `red5pro`'s references rather than duplicating them; its Agora-side claims are explicitly *not* verified against Agora's own docs (no Agora source is available in this repo) and are flagged as such in that skill's Guardrails — hold new skills of this kind to the same "trace every claim to a source, or say you can't" bar even when part of the topic is competitive positioning rather than pure technical reference.
 
 ## Repository Structure
@@ -12,9 +12,7 @@ Multiple skills live side by side under `skills/`:
 ```
 scripts/
 ├── validate-skills.sh              # Static validation (targets every skill under skills/)
-├── blocklist-terms.txt             # Terms validate-skills.sh flags if found under skills/
-├── sync-docs-cache.sh              # Mirrors referenced red5pro-docs pages into references/_docs-cache/
-└── docs-cache-manifest.txt         # Paths sync-docs-cache.sh mirrors, relative to red5pro-docs/website/docs/
+└── blocklist-terms.txt             # Terms validate-skills.sh flags if found under skills/
 skills/
 ├── red5pro/                        # Primary technical reference skill — published plugin
 │   ├── SKILL.md                    # Entry point, route index
@@ -26,8 +24,7 @@ skills/
 │       ├── stream-manager/         # Stream Manager 2.0 concepts + APIs
 │       ├── cloud/                  # Red5 Cloud PaaS
 │       ├── sdks/                   # Web, Android, iOS, Conference, Backend (Node/Java/Go), Core (native)
-│       ├── api/                    # REST API surface index
-│       └── _docs-cache/            # Local mirror of the specific red5pro-docs pages referenced above (generated — see PROVENANCE.md)
+│       └── api/                    # REST API surface index
 └── red5-cloud-pubnub/               # Red5 Cloud + PubNub setup skill, plus Agora migration/positioning
     ├── SKILL.md
     ├── examples/                   # Copy-pasteable chat/presence/file-sharing code: HTML5, iOS, Android
@@ -48,7 +45,9 @@ tests/
 
 ## Source-of-Truth / Freeze-Forever Rule
 
-Ask: **will this still be correct in 6 months without any updates?** If yes, put it inline (stable SDK method names, protocol concepts, node-role definitions). If no, mark it "When to Fetch More" and point at the corresponding path under `references/_docs-cache/` (with the live `https://www.red5.net/docs/...` URL alongside it) rather than inventing details. Every claim must trace back to an actual page in `red5pro-docs` — see [ARCHITECTURE.md](ARCHITECTURE.md#link-first-vs-inline-strategy) for the content-type table.
+Ask: **will this still be correct in 6 months without any updates?** If yes, put it inline (stable SDK method names, protocol concepts, node-role definitions). If no, mark it "When to Fetch More" and point at the exact live `https://www.red5.net/docs/...` URL rather than inventing details. Every claim must trace back to an actual page at [red5.net/docs](https://www.red5.net/docs/) — see [ARCHITECTURE.md](ARCHITECTURE.md#link-first-vs-inline-strategy) for the content-type table.
+
+There is no local docs mirror in this repo — "When to Fetch More" always means a live fetch. `red5.net` sits behind a Cloudflare bot check that 403s WebFetch-style tools; fetch with `curl` (a normal browser-like `User-Agent`) through a shell instead. See `red5pro/SKILL.md`'s Documentation Lookup section for the exact pattern.
 
 ## Naming Conventions
 
@@ -68,7 +67,7 @@ For a distinct topic that doesn't fit as a `red5pro` topic area — a different 
 
 1. Create `skills/{skill-name}/SKILL.md` with valid frontmatter (`name` matching the directory, `description` with concrete trigger keywords, `metadata.author`/`version`/`source`). `skill-name` follows the same lowercase-`kebab-case` convention as everything else in this repo.
 2. Add `skills/{skill-name}/references/` for the actual content if it's more than a couple paragraphs — keep `SKILL.md` itself short (routing + guardrails), per the 4-layer split above. A single skill doesn't need the full multi-directory `red5pro` layout if the topic is narrow; one `references/{topic}.md` file is fine.
-3. State the skill's **source-of-truth explicitly** in its frontmatter and Guardrails section — which claims trace back to a real doc source (and which one), and which don't. If a skill covers something this repo has no source documentation for (a competitor's product, for example), say so explicitly rather than presenting unverified claims as fact — same bar as the freeze-forever rule above, just applied to a topic that isn't `red5pro-docs`-derived. Prefer linking into `red5pro`'s references for anything already covered there instead of duplicating it.
+3. State the skill's **source-of-truth explicitly** in its frontmatter and Guardrails section — which claims trace back to a real doc source (and which one), and which don't. If a skill covers something this repo has no source documentation for (a competitor's product, for example), say so explicitly rather than presenting unverified claims as fact — same bar as the freeze-forever rule above, just applied to a topic that isn't derived from [red5.net/docs](https://www.red5.net/docs/). Prefer linking into `red5pro`'s references for anything already covered there instead of duplicating it.
 4. Add a `## {skill-name}` section to `tests/eval-cases.md` with at least one case.
 5. Add a line to this file's skill list at the top, and to `README.md`'s skill list.
 6. Run `bash scripts/validate-skills.sh` — it covers every skill under `skills/`, not just `red5pro`.

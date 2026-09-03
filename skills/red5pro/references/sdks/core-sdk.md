@@ -1,6 +1,6 @@
 # Red5 Pro Core SDK (Native / C++)
 
-Source: local cache [`../_docs-cache/red5-pro/development/sdks/red5-core-sdk/`](../_docs-cache/red5-pro/development/sdks/red5-core-sdk/), mirrors [https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/)
 
 For native applications on **Linux, Windows, and macOS**. Provides a unified C++ API to connect to the Red5 Pro Server and build media applications, with a modular structure so you only link what you need.
 
@@ -21,4 +21,4 @@ Use the Core SDK when building a **native desktop/embedded** client (Linux/Windo
 
 ## When to Fetch More
 
-Concrete `IClient`/module API signatures, build instructions per platform, and example projects are in the local cache at [`../_docs-cache/red5-pro/development/sdks/red5-core-sdk/examples/`](../_docs-cache/red5-pro/development/sdks/red5-core-sdk/examples/) (mirrors [https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/examples/](https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/examples/)) — pull those before writing integration code, since class/method-level detail was out of scope for what was reviewed here.
+Concrete `IClient`/module API signatures, build instructions per platform, and example projects are at [https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/examples/](https://www.red5.net/docs/red5-pro/development/sdks/red5-core-sdk/examples/) — pull those before writing integration code, since class/method-level detail was out of scope for what was reviewed here.

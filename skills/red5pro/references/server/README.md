@@ -26,4 +26,4 @@ Red5 Pro is proprietary software built on top of the open-source [Red5](https://
 
 ## When to Fetch More
 
-Detailed OS-specific install steps (Linux/macOS/Windows package commands, service configuration, license-key activation, version upgrade procedures) change per release — check the local cache at [`../_docs-cache/red5-pro/users-guide/installation/`](../_docs-cache/red5-pro/users-guide/installation/) (or the live page at [https://www.red5.net/docs/red5-pro/users-guide/installation/](https://www.red5.net/docs/red5-pro/users-guide/installation/) for the current version) rather than relying on memorized command sequences.
+Detailed OS-specific install steps (Linux/macOS/Windows package commands, service configuration, license-key activation, version upgrade procedures) change per release — check the live docs at [https://www.red5.net/docs/red5-pro/users-guide/installation/](https://www.red5.net/docs/red5-pro/users-guide/installation/) rather than relying on memorized command sequences.
