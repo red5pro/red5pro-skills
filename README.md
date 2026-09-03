@@ -7,7 +7,7 @@ AI agent skills for building with [Red5](https://www.red5.net) — Red5 Pro (sel
 | Skill | What it covers |
 |---|---|
 | [`red5pro`](skills/red5pro/SKILL.md) | The primary technical reference: server setup/clustering, streaming protocols (WebRTC/WHIP/WHEP, RTMP/ERTMP, RTSP, HLS), authentication, streaming features (restreaming, transcoding, mixing, recording), Stream Manager 2.0, Red5 Cloud, and client/backend SDKs (Web, Android, iOS, Conference, Backend, Core). |
-| [`agora-to-red5-cloud-pubnub-migration`](skills/agora-to-red5-cloud-pubnub-migration/SKILL.md) | Migration and positioning guidance for teams moving from Agora to Red5 Cloud + PubNub. Conceptual mapping only — see that skill's Guardrails for what is and isn't verified. |
+| [`red5-cloud-pubnub`](skills/red5-cloud-pubnub/SKILL.md) | Setting up Red5 Cloud's built-in PubNub integration — chat, presence, and image/file sharing alongside live video, with copy-pasteable HTML5/iOS/Android code. Also covers migrating/positioning from Agora — see that skill's Guardrails for what is and isn't verified. |
 
 ## Quick Install With npx (Claude Code, Codex)
 

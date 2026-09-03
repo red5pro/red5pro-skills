@@ -1,6 +1,6 @@
 # Architecture
 
-This file documents the internal design of the **`red5pro`** skill specifically — its 4-layer content split and link-first vs. inline strategy. Other skills in this repo (see [AGENTS.md](AGENTS.md) for the full list, e.g. `agora-to-red5-cloud-pubnub-migration`) are smaller and don't necessarily follow this exact layering, but should still apply the same underlying principle: state explicitly what's verified against a real source and what isn't, and don't duplicate content `red5pro` already covers — link to it instead. See [AGENTS.md § Adding a New Skill](AGENTS.md#adding-a-new-skill) for that bar applied to a new skill.
+This file documents the internal design of the **`red5pro`** skill specifically — its 4-layer content split and link-first vs. inline strategy. Other skills in this repo (see [AGENTS.md](AGENTS.md) for the full list, e.g. `red5-cloud-pubnub`) are smaller and don't necessarily follow this exact layering, but should still apply the same underlying principle: state explicitly what's verified against a real source and what isn't, and don't duplicate content `red5pro` already covers — link to it instead. See [AGENTS.md § Adding a New Skill](AGENTS.md#adding-a-new-skill) for that bar applied to a new skill.
 
 ## 4-Layer Progressive Disclosure
 

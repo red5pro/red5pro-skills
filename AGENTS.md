@@ -5,7 +5,7 @@ This repository contains AI agent skills for building with [Red5](https://www.re
 Multiple skills live side by side under `skills/`:
 
 - **`red5pro`** — the primary technical reference skill; every claim traces back to an actual `red5pro-docs` page (see Source-of-Truth rule below).
-- **`agora-to-red5-cloud-pubnub-migration`** — a narrower, positioning-flavored skill for the PubNub campaign: Agora → Red5 Cloud + PubNub migration guidance. Its Red5-side claims link into `red5pro`'s references rather than duplicating them; its Agora-side claims are explicitly *not* verified against Agora's own docs (no Agora source is available in this repo) and are flagged as such in that skill's Guardrails — hold new skills of this kind to the same "trace every claim to a source, or say you can't" bar even when the topic is competitive positioning rather than pure technical reference.
+- **`red5-cloud-pubnub`** — a narrower skill covering Red5 Cloud's built-in PubNub integration (chat/presence/image-file-sharing, with copy-pasteable HTML5/iOS/Android code), plus positioning-flavored Agora → Red5 Cloud + PubNub migration guidance for the PubNub campaign. Its Red5-side claims link into `red5pro`'s references rather than duplicating them; its Agora-side claims are explicitly *not* verified against Agora's own docs (no Agora source is available in this repo) and are flagged as such in that skill's Guardrails — hold new skills of this kind to the same "trace every claim to a source, or say you can't" bar even when part of the topic is competitive positioning rather than pure technical reference.
 
 ## Repository Structure
 
@@ -28,10 +28,11 @@ skills/
 │       ├── sdks/                   # Web, Android, iOS, Conference, Backend (Node/Java/Go), Core (native)
 │       ├── api/                    # REST API surface index
 │       └── _docs-cache/            # Local mirror of the specific red5pro-docs pages referenced above (generated — see PROVENANCE.md)
-└── agora-to-red5-cloud-pubnub-migration/  # PubNub campaign: Agora migration + positioning skill
+└── red5-cloud-pubnub/               # Red5 Cloud + PubNub setup skill, plus Agora migration/positioning
     ├── SKILL.md
+    ├── examples/                   # Copy-pasteable chat/presence/file-sharing code: HTML5, iOS, Android
     └── references/
-        └── migration-guide.md      # Concept mapping + migration checklist; links into red5pro/ rather than duplicating it
+        └── migration-guide.md      # Agora concept mapping + migration checklist; links into red5pro/ rather than duplicating it
 tests/
 └── eval-cases.md                   # Prompt → expected route eval cases, one per topic area
 ```

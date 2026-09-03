@@ -189,7 +189,7 @@ that aren't actually written there).
 
 ---
 
-## `agora-to-red5-cloud-pubnub-migration` skill
+## `red5-cloud-pubnub` skill
 
 #### agora-concept-mapping
 **Prompt:** "We're on Agora today and want to know what the Red5 equivalent of Agora RTM is for chat."
