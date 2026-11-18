@@ -1,18 +1,36 @@
 # Red5 Pro WebRTC SDK (Web)
 
-Source: live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/)
+Source: live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-streaming-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-streaming-sdk/)
 
-Package: `red5pro-webrtc-sdk` (npm/yarn, or CDN script tag).
+Monolith Package: `red5-web-sdk` (npm/yarn, or CDN script tag).
 
 ## Install
 
+Monolith (WebRTC + MOQ):
+
 ```html
-<script src="https://cdn.jsdelivr.net/npm/red5pro-webrtc-sdk@latest/red5pro-sdk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/red5-web-sdk@latest/red5-web-sdk.min.js"></script>
+```
+
+WebRTC Only:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/red5-web-sdk@latest/red5-web-sdk-webrtc.min.js"></script>
+```
+
+MOQ (Media Over QUIC) Only:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/red5-web-sdk@latest/red5-web-sdk-moq.min.js"></script>
 ```
 
 ```sh
-npm install --save-dev red5pro-webrtc-sdk
+npm install --save-dev red5-web-sdk
 ```
+
+## Current API: MOQ / WISH
+
+As of SDK `17.0.0`, the WISH clients (`WHIPClient` and `WHEPClient`) are available, as well as clients that support streaming over the MOQ (Media Over QUIC) protocol: `MOQPublisher` and `MOQSubscriber`. In addition to the streaming clients, there is also `MOQCatalog` and `MOQMessageChannel` for retrieval of namespaced catalog and messaging channel, respectively.
 
 ## Current API: WHIPClient / WHEPClient
 
@@ -118,4 +136,4 @@ const config = {
 
 ## When to Fetch More
 
-Full event-type catalogs, error codes, the alternate "construct with a full WHIP/WHEP endpoint URL" calling convention (auto-starts broadcast/playback, skips a separate `publish()`/`subscribe()` call), and advanced config (custom ICE servers, encoder profile tuning) should be pulled from the live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-webrtc-sdk/) for the SDK version in use.
+Full event-type catalogs, error codes, the alternate "construct with a full WHIP/WHEP endpoint URL" calling convention (auto-starts broadcast/playback, skips a separate `publish()`/`subscribe()` call), and advanced config (custom ICE servers, encoder profile tuning) should be pulled from the live docs at [https://www.red5.net/docs/red5-pro/development/sdks/red5-streaming-sdk/](https://www.red5.net/docs/red5-pro/development/sdks/red5-streaming-sdk/) for the SDK version in use.
