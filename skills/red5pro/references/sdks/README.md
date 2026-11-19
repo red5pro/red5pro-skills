@@ -6,7 +6,7 @@ All Red5 client SDKs work against **both** a standalone Red5 Pro server (host/IP
 
 ## Platform Reference Files
 
-- **[web-webrtc-sdk.md](web-webrtc-sdk.md)** — `red5pro-webrtc-sdk` (JS/TS, browser): `WHIPClient`/`WHEPClient` for publish/subscribe.
+- **[web-sdk.md](web-sdk.md)** — `red5-web-sdk` (JS/TS, browser): WebRTC (`WHIPClient`/`WHEPClient`) and MOQ (`MOQPublisher`/`MOQSubscriber`) clients.
 - **[android-sdk.md](android-sdk.md)** — Red5 Android SDK: `IRed5WebrtcClient` builder pattern; publish, subscribe, chat (PubNub), conferencing, stats.
 - **[ios-sdk.md](ios-sdk.md)** — Red5 iOS SDK: `Red5WebrtcClientBuilder`/`Red5WebrtcClient`; publish, subscribe, chat, conferencing, SwiftUI-compatible.
 - **[conference-sdk.md](conference-sdk.md)** — `red5pro-conference-sdk` (JS/npm): room-based multi-party conferencing client for web, with PubNub-powered chat/interactivity.
@@ -15,7 +15,7 @@ All Red5 client SDKs work against **both** a standalone Red5 Pro server (host/IP
 
 ## Choosing a Route
 
-- Browser app → [web-webrtc-sdk.md](web-webrtc-sdk.md).
+- Browser app → [web-sdk.md](web-sdk.md).
 - Native Android app → [android-sdk.md](android-sdk.md).
 - Native iOS/SwiftUI app → [ios-sdk.md](ios-sdk.md).
 - Multi-party video conferencing in the browser → [conference-sdk.md](conference-sdk.md) (or the conferencing sections of the Android/iOS SDKs for native apps).

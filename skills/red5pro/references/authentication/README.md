@@ -43,7 +43,7 @@ await publisher.init({
 });
 ```
 
-See [../sdks/web-webrtc-sdk.md](../sdks/web-webrtc-sdk.md) for the full `WHIPClient`/`WHEPClient` init shape, and [Connection URLs](../protocols/README.md#connection-urls) for the endpoint construction this pairs with.
+See [../sdks/web-sdk.md](../sdks/web-sdk.md) for the full `WHIPClient`/`WHEPClient` init shape, and [Connection URLs](../protocols/README.md#connection-urls) for the endpoint construction this pairs with.
 
 ## Stream-Bombing Prevention
 

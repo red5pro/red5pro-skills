@@ -25,7 +25,7 @@ Stream Manager 2.0 exposes the following REST services:
 
 - **Admin API** — deploy/manage Red5 Pro nodes; scales nodes in/out per scaling and capacity expressions and current load.
 - **Auth API** — authenticates clients and issues JWTs for use with the other Stream Manager services.
-- **Proxy API** — securely routes client requests to the appropriate node based on capacity/limit expressions and current load. This is what client SDKs hit when they configure an `endpoint` (e.g. `.../as/v1/proxy/whip/live/{streamName}` or `.../as/v1/proxy/whep/live/{streamName}`) — see [../sdks/web-webrtc-sdk.md](../sdks/web-webrtc-sdk.md).
+- **Proxy API** — securely routes client requests to the appropriate node based on capacity/limit expressions and current load. This is what client SDKs hit when they configure an `endpoint` (e.g. `.../as/v1/proxy/whip/live/{streamName}` or `.../as/v1/proxy/whep/live/{streamName}`) — see [../sdks/web-sdk.md](../sdks/web-sdk.md).
 - **Scheduling NodeGroups API** — schedule node groups to scale in/out on a time schedule.
 - **Streams API** — handles publish/subscribe requests and reports node-group load.
 - **Streams Provision API** — provisions streams for publishing/subscribing based on request parameters.
