@@ -93,6 +93,15 @@ that aren't actually written there).
 - Works against both standalone Red5 Pro and Red5 Cloud with the same client class, different builder config.
 - Requires a Red5 Pro SDK license key at build time or publish/subscribe fails license validation.
 
+#### sdk-web-moq
+**Prompt:** "What is the new web SDK package for Red5, and does it support both WebRTC and MOQ?"
+**Expected route:** `references/sdks/README.md` → `references/sdks/web-sdk.md`
+**Must mention:**
+- The browser package is `red5-web-sdk`, and it covers both WebRTC and MOQ.
+- WebRTC uses `WHIPClient`/`WHEPClient`; MOQ uses `MOQPublisher`/`MOQSubscriber`.
+**Must NOT:**
+- Route to `web-webrtc-sdk.md` as the primary file for new web SDK guidance.
+
 #### api-server-stats
 **Prompt:** "What REST call do I make to pull live stats for a server's connected clients?"
 **Expected route:** `references/api/README.md`
